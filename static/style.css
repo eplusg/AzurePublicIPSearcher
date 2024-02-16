@@ -1,0 +1,116 @@
+/* Apply basic styles to the body */
+body {
+  font-family: 'Roboto', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f4f4f4; /* Set the background color to gray */
+}
+
+/* Style the search container */
+.search-container {
+  position: relative;
+}
+
+/* Style the search bar */
+#search-bar {
+  display: block;
+  width: 100%;
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  font-size: 16px;
+  outline: none;
+}
+
+#search-bar:focus {
+  box-shadow: 0px 0px 4px #0078d4;
+}
+
+/* Style the search results container */
+#results {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 1;
+  display: none;
+}
+/* Style individual search results */
+#results .result {
+  font-size: 16px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+/* Style search results on hover */
+#results .result:hover {
+  background-color: #f2f2f2;
+}
+
+/* Style the search bar highlighting */
+.highlight {
+  background-color: yellow;
+}
+
+/* Add margin to the info container */
+#info {
+  margin-top: 2rem;
+}
+
+/* Style the info paragraphs */
+#info p {
+  margin: 0.5rem 0;
+}
+
+/* Style the header container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* Style the header title */
+.header h1 {
+  margin: 0;
+  color: #0078d4; /* Set the header color to blue */
+}
+
+/* Style the info container in the header */
+.info {
+  text-align: right;
+  font-size: 9px;
+  color: #333333; /* Set the info color to dark gray */
+}
+
+/* Style the selected search result */
+.result.selected {
+  background-color: #eeeeee;
+}
+
+/* Style the content container, ensuring the contact info is at the bottom */
+.content {
+  min-height: calc(100vh - 30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Style the contact info container */
+.contact {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Contact info link color */
+.contact a {
+  color: gray;
+  text-decoration: none;
+}

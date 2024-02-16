@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Public IP Search</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Azure Public IP Search</h1>
+        <div class="info">
+            <p>Last Updated: {{ last_updated_date }}</p>
+            <p>File Change Number: {{ change_number }}</p>
+            <p class="file-link">Source file: <a href="https://www.microsoft.com/en-us/download/confirmation.aspx?id=56519" target="_blank">Download</a></p>
+        </div>
+    </div>
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search ip address, azure service tag or region...">
+        <div id="results"></div>
+    </div>
+    <div id="info">
+        <p><strong>Azure Service Tag:</strong> <span id="name"></span></p>
+        <p><strong>IP Addresses used:</strong> <span id="ipAddress"></span></p>
+    </div>
+    <div class="contact">
+        <small><a href="mailto:hi@aztools.cc">Contact</a></small>
+      </div>
+      
+    <script src="/static/script.js"></script>
+</body>
+</html> 
